@@ -28,13 +28,13 @@ import BrewingProcessPage5 from './pages/brewingProcess/5-Carbonation';
 
 import BrewPage from './pages/brew/';
 
-import VolzbrewAppBar from './components/VolzbrewAppBar';
+import MaxwellVolzAppBar from './components/MaxwellVolzAppBar';
 
-import backgroundImage from './imgs/milledGrains.jpg';
+// import backgroundImage from './imgs/milledGrains.jpg';
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -92,7 +92,7 @@ export default class Header extends PureComponent<PropType> {
             <Router onUpdate={() => window.scrollTo(0, 0)} >
 
                 <div>
-                    <VolzbrewAppBar />
+                    <MaxwellVolzAppBar />
 
                     <div style={styles.content}>
                         <Route exact path="/" component={Home} />

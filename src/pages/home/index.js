@@ -14,24 +14,15 @@ import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 
-
-import VolzbrewAppBar from '../../components/VolzbrewAppBar'
-
-import backgroundImage from '../../imgs/milledGrains.jpg';
-import mash from '../../imgs/mash1.jpg';
-import brewpot from '../../imgs/brewPot1.jpg';
-import brewbros from '../../imgs/brewBros1.jpg';
-
-
-import logoSVG from '../../imgs/logoW.svg';
+import BarChart from '../../components/BarChart';
 
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        // backgroundSize: 'cover',
         height: '660px'
     },
     mainHeaderText: {
@@ -83,15 +74,15 @@ const styles = {
         margin: 'auto'
     },
     cardImg1: {
-        backgroundImage: `url(${mash})`,
+        // backgroundImage: `url(${mash})`,
         height: 200,
     },
     cardImg2: {
-        backgroundImage: `url(${brewpot})`,
+        // backgroundImage: `url(${brewpot})`,
         height: 200,
     },
     cardImg3: {
-        backgroundImage: `url(${brewbros})`,
+        // backgroundImage: `url(${brewbros})`,
         height: 200,
     },
 
@@ -111,21 +102,20 @@ export default class Header extends PureComponent<PropType> {
 
 
 
-                    <Grid item xs={12} style={styles.headerGrid}>
+                    <Grid item xs={12} style={styles.headerGrid} className="headerGrid">
 
 
                         <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0, paddingTop: 230, }}>
-                            <Grid item xs={0} md={2}>
-                            </Grid>
-                            <Grid item xs={5} md={4}>
+                            
+                            <Grid item xs={10} md={8}>
                                 <Link to="/brew">
                                     <Typography variant="display3" component="h2" style={{ color: 'white' }}>
+                                       Experienced web developer.
+                                    </Typography>
 
-                                        Brew Beer
-                            </Typography>
                                 </Link>
                             </Grid>
-                            <Grid item xs={5} md={4} style={{ color: 'white', textAlign: 'right' }}>
+                            {/* <Grid item xs={5} md={4} style={{ color: 'white', textAlign: 'right' }}>
                                 <Typography variant="display2" component="h2" style={{ color: 'white', textDecoration: 'underline', marginBottom: '8px' }}>
                                     New Articles
                                 </Typography>
@@ -139,9 +129,8 @@ export default class Header extends PureComponent<PropType> {
                                         Equipment
                                     </Typography>
                                 </Link>
-                            </Grid>
-                            <Grid item xs={0} md={2}>
-                            </Grid>
+                            </Grid> */}
+                            
                         </Grid>
                         {/* <Typography variant="display2" style={styles.mainHeaderText}>Volzbrew</Typography> */}
 
@@ -167,12 +156,12 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap">
 
 
-                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40 }}>
-                        We want to help you brew great beer.
+                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign:'center' }}>
+                       Check out some of my recent projects.
                     </Typography>
 
                 </div>
-                <div className="colorWrap">
+                {/* <div className="colorWrap">
                 
                     <div className="contentWrap">
 
@@ -181,17 +170,19 @@ export default class Header extends PureComponent<PropType> {
                             <Grid item xs={12} style={{ marginTop: 20, marginBottom: 40 }}>
 
                                 <Typography variant="headline">
-                                    Our goal is to provide the best home brewing information conveniently organized in one place.
-                                    <br /><br /> From basic information like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
+                                    
+                                    <br /><br />
                                 </Typography>
 
                             </Grid>
                         </Grid>
                     </div>
-                </div>
+                {/* </div> */}
+                <div className="headerGrid">
+                
                 <div className="contentWrap">
 
-                    <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 10, marginBottom: 20 }}>
+                    <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40, marginBottom: 40 }}>
 
                             <Grid item xs={12} md={4}>
                                 <div>
@@ -203,16 +194,16 @@ export default class Header extends PureComponent<PropType> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
-                                                How to Brew
+                                                Volzbrew.com
                                         </Typography>
                                             <Typography component="p">
-                                                Everything you need to know to get started.
-                                    </Typography>
+                                            We're just regular guys who make delicious BEER. Our first attempts were huge successes thanks to the tips and support from our Uncles and we want to share what we know.
+                                        </Typography>
                                         </CardContent>
                                         <CardActions>
                                             <Button size="small" color="primary">
                                                 Learn More
-                                        </Button>
+                                            </Button>
                                             <Button size="small" color="primary">
                                                 Share
                                         </Button>
@@ -231,19 +222,19 @@ export default class Header extends PureComponent<PropType> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
-                                                Brewing Equipment
+                                                Blokdodge
                                         </Typography>
                                             <Typography component="p">
-                                                The tools we have, use, and recommend.
+                                                BLOKDODGE is a fast-paced block simulator based in a fantastic world of geometry. Are you edgy enough? Do you get the point? 
                                     </Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <Button size="small" color="primary">
+                                            {/* <Button size="small" color="primary">
                                                 Learn More
-                                        </Button>
+                                            </Button> */}
                                             <Button size="small" color="primary">
-                                                Share
-                                        </Button>
+                                                VIEW ON STEAM
+                                            </Button>
                                         </CardActions>
                                     </Card>
                                 </div>
@@ -261,26 +252,37 @@ export default class Header extends PureComponent<PropType> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
-                                                Cost of Brewing
+                                                MaxwellVolz.com
                                         </Typography>
                                             <Typography component="p">
-                                                How much does brewing cost?
-                                            <br />
-                                                Is it worth it?
-                                    </Typography>
+                                                As usual I do a breakdown of the technologies used for creating my personal website; <b>ReactJS, Webpack, MaterialUI, AWS, Node, and more!</b>
+                                            </Typography>
                                         </CardContent>
                                         <CardActions>
                                             <Button size="small" color="primary">
                                                 Learn More
-                                        </Button>
+                                            </Button>
                                             <Button size="small" color="primary">
-                                                Share
-                                        </Button>
+                                                Git
+                                            </Button>
                                         </CardActions>
                                     </Card>
                                 </div>
                             </Grid>
                         </Grid>
+
+                    </div>
+                    </div>
+
+                    <div className="contentWrap">
+
+
+                        <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign:'center' }}>
+                            I am currently looking for a new developer role in the Bay Area.
+                        </Typography>
+
+                                    <BarChart data={[5,10,1,3]} size={[500,500]} />
+                        
 
                     </div>
 

@@ -13,20 +13,16 @@ import Typography from 'material-ui/Typography';
 
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
-import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
 import BreadCrumbs from '../../components/BreadCrumbs';
 
 
 
-import backgroundImage from '../../imgs/milledGrains.jpg';
+// import backgroundImage from '../../imgs/milledGrains.jpg';
 
-import water from '../../imgs/water.svg';
-import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain2.svg';
-import yeast from '../../imgs/yeast3.svg';
-import beer from '../../imgs/beer.svg';
+// import water from '../../imgs/water.svg';
+
 
 
 // const Water = require('../../imgs/water.svg');
@@ -34,7 +30,7 @@ import beer from '../../imgs/beer.svg';
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -137,27 +133,12 @@ export default class Header extends PureComponent<PropType> {
 
 
                                 Cooling the wort as quickly as possible after the boil and prior to transferring the liquid into a fermentation vessel, and pitching (i.e. adding) the yeast, creates an ideal environment for yeast to thrive in. 
-                                <br />
-                                <br />
-Rapidly cooling the wort also has many other benefits such as aiding with beer clarity, reducing DMS (dimethyl sulfide), which can add a cooked- or canned-corn like aroma to beer, and helps decrease the risk of contamination. This is the time when the future <b>beer</b> (woo! future beer!) is most vulnerable to bacteria and other microorganisms (e.g. nasty bugs). 
-<br />
-                                <br />
-                                <i><b>Sanitization</b> is extremely important at this stage to help ward off infection which can lead to off-flavors in the finished beer (gross, no thanks!) Anything that comes in contact with wort after the boil <b>must</b> be THOROUGHLY CLEANED AND SANITIZED. (linky)</i>
-<br />
-                                <br />
-Wort chillers are extremely effective for rapidly cooling the wort under 80°F. Once cooled, the wort is then splashed into a fermentation bucket or glass carboy and mixed with the yeast. Splashing the wort helps re-oxygenate the liquid, as boiling removes oxygen, and the yeast will utilize this oxygen while converting wort into <b>BEER!</b>
-<br />
-<br />
-Transferring wort to fermentation bucket (not a golden shower)
-<br />
-<br />
-Next, the fermentation vessel is swirled, shaken, and sealed with an airlock. Airlocks filled with sanitizer (preferred) or vodka (works in a pinch; free from impurities) provide a liquid barrier which allow yeast byproducts to escape while prohibiting contaminants from getting in.
-
+                                
 
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <img src={beer} className="svgIcon" alt="beer" />
+                            {/* <img src={beer} className="svgIcon" alt="beer" /> */}
                         </Grid>
                     </Grid>
                 </div>

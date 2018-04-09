@@ -12,13 +12,12 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 
 
-import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 
-import backgroundImage from '../../imgs/milledGrains.jpg';
+// import backgroundImage from '../../imgs/milledGrains.jpg';
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',

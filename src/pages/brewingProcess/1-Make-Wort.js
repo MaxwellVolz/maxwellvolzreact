@@ -13,19 +13,16 @@ import Typography from 'material-ui/Typography';
 
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
-import VolzbrewAppBar from '../../components/VolzbrewAppBar';
+
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
 import BreadCrumbs from '../../components/BreadCrumbs';
 
 
-import backgroundImage from '../../imgs/milledGrains.jpg';
+// import backgroundImage from '../../imgs/milledGrains.jpg';
 
-import water from '../../imgs/water.svg';
-import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain2.svg';
-import yeast from '../../imgs/yeast3.svg';
-import beer from '../../imgs/beer.svg';
+// import water from '../../imgs/water.svg';
+
 
 
 // const Water = require('../../imgs/water.svg');
@@ -33,7 +30,7 @@ import beer from '../../imgs/beer.svg';
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -146,7 +143,7 @@ export default class Header extends PureComponent<PropType> {
                             </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <img src={beer} className="svgIcon" alt="beer" />
+                            {/* <img src={beer} className="svgIcon" alt="beer" /> */}
                         </Grid>
                     </Grid>
                     </div>

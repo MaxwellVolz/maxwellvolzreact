@@ -13,19 +13,16 @@ import Typography from 'material-ui/Typography';
 
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
-import VolzbrewAppBar from '../../components/VolzbrewAppBar';
+
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
 import BreadCrumbs from '../../components/BreadCrumbs';
 
 
-import backgroundImage from '../../imgs/milledGrains.jpg';
+// import backgroundImage from '../../imgs/milledGrains.jpg';
 
-import water from '../../imgs/water.svg';
-import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain2.svg';
-import yeast from '../../imgs/yeast3.svg';
-import beer from '../../imgs/beer.svg';
+// import water from '../../imgs/water.svg';
+
 
 
 // const Water = require('../../imgs/water.svg');
@@ -33,7 +30,7 @@ import beer from '../../imgs/beer.svg';
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -135,20 +132,11 @@ export default class Header extends PureComponent<PropType> {
                             
                             <Typography variant="subheading" gutterBottom>
                                 This is where the magic happens. Yeast consume the wort’s sugars and convert them into alcohol, making <b>BEER!</b> 
-                                <br />
-                                <br />
-Fermentation vessels should be stored in a dark place out of direct sunlight with consistent temperatures. Fermentation temperature should be kept between 65-75°F, ideally 68-72°F (different ranges for lagering), for at least 10-12 days. 
-<br />
-                                <br />
-Temperature control is very important! Higher temperatures and/or large fluctuations stress yeast which can lead to off-flavors. Lower temperatures can slow down and inhibit crucial yeast processes which increase the risk of infection.
-<br />
-                                <br />
-During the first few days keeping a close eye on the fermenter is important. The yeast will become very active, furiously consuming the primary sugars, before settling down and completing their job. Watch out for airlock clogging during the first few days. This can lead to a build-up of pressure inside the fermenting bucket and cause the lid to pop of and spew wort all over the walls.(Trust us, this happened at four in the morning and sounded like a gun went off!)
 
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <img src={beer} className="svgIcon" alt="beer" />
+                            {/* <img src={beer} className="svgIcon" alt="beer" /> */}
                         </Grid>
                     </Grid>
                 </div>

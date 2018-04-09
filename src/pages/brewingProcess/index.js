@@ -13,20 +13,15 @@ import Typography from 'material-ui/Typography';
 
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
-import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
 import BreadCrumbs from '../../components/BreadCrumbs';
 
 
-import backgroundImage from '../../imgs/milledGrains.jpg';
+// import backgroundImage from '../../imgs/milledGrains.jpg';
 
-import water from '../../imgs/water.svg';
-import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain2.svg';
-import yeast from '../../imgs/yeast3.svg';
-import beer from '../../imgs/beer.svg';
-import brewProcess from '../../imgs/brewProcess.svg';
+// import water from '../../imgs/water.svg';
+
 
 
 
@@ -35,7 +30,7 @@ import brewProcess from '../../imgs/brewProcess.svg';
 
 const styles = {
     headerGrid: {
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -141,22 +136,7 @@ export default class Header extends PureComponent<PropType> {
                                         <br /> */}
                                         Homebrewing is NOT hard.
                                         <br />
-                                        <br />
-                                        Only four ingredients are needed to make beer:&nbsp;
-                                        <b>
-                                        water<img src={water} className="svgIconInline" alt="water" />, 
-                                        grain<img src={grain} className="svgIconInline" alt="grain" />, 
-                                        hops<img src={hops} className="svgIconInline" alt="hops" />
-                                        , and yeast<img src={yeast} className="svgIconInline" alt="yeast" />.</b>
-                                        <br />
-                                        <br />
-                                        Brewers combine these ingredients in countless ways to brew their favorite beers and create their own recipes.
-                                        <br />
-                                        <br />
-                                        <i> Volz Brew Tip: Having the right brewing equipment makes homebrewing easier and much more enjoyable. Good, durable equipment doesn’t cost a fortune! Check out what we use: <a href="#" style={{textDecoration:'underline solid blue'}}>Brewing Equipment</a></i>
-                                        <br />
-                                        <br />
-                                        There are 5 main steps in the brewing process:
+
                                         {/* <ol>
                                             <li>Make Wort</li>
                                             <li>The Boil</li>
@@ -168,7 +148,7 @@ export default class Header extends PureComponent<PropType> {
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <img src={brewProcess} className="svgIcon" alt="brewProcess" />
+                            {/* <img src={brewProcess} className="svgIcon" alt="brewProcess" /> */}
                         </Grid>
                     </Grid>
                     </div>
