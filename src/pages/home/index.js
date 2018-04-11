@@ -16,6 +16,9 @@ import Typography from 'material-ui/Typography';
 
 import BarChart from '../../components/BarChart';
 
+// import bikerSVG from '../../imgs/svgs/cruising.svg';
+
+import biker from '../../imgs/svgs/cruising.svg';
 
 const styles = {
     headerGrid: {
@@ -36,6 +39,7 @@ const styles = {
     },
     headerText: {
         textAlign: 'center',
+
         color: 'white'
     },
     contentWrapSkinny: {
@@ -85,6 +89,11 @@ const styles = {
         // backgroundImage: `url(${brewbros})`,
         height: 200,
     },
+    bikerSVG:{
+        position: 'absolute',
+        height: '300px',
+        bottom: '226px'
+    }
 
 
 
@@ -112,9 +121,11 @@ export default class Header extends PureComponent<PropType> {
                                     <Typography variant="display3" component="h2" style={{ color: 'white' }}>
                                        Experienced web developer.
                                     </Typography>
-
+                                    
                                 </Link>
                             </Grid>
+                            <img src={biker} className="bikerSVG" style={styles.bikerSVG} alt="biker" />
+                            
                             {/* <Grid item xs={5} md={4} style={{ color: 'white', textAlign: 'right' }}>
                                 <Typography variant="display2" component="h2" style={{ color: 'white', textDecoration: 'underline', marginBottom: '8px' }}>
                                     New Articles

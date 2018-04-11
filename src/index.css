@@ -106,3 +106,19 @@ a, a:visited, a:hover, a:active {
   height: 23px;
   vertical-align: middle;
 }
+
+@keyframes bikerAnim
+{
+    from {
+        left: 100%;
+    }
+    to {
+        left: -50%;
+    }
+}
+
+img.bikerSVG {
+  animation: bikerAnim 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
