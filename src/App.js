@@ -19,6 +19,10 @@ import {
 
 import HomePage from './pages/home/';
 import AboutPage from './pages/about/';
+
+import HackerPage from './pages/hackerRank/';
+
+
 import BrewingProcessPage from './pages/brewingProcess/';
 import BrewingProcessPage1 from './pages/brewingProcess/1-Make-Wort';
 import BrewingProcessPage2 from './pages/brewingProcess/2-The-Boil';
@@ -76,12 +80,17 @@ const Blog = () => (
     </div>
 )
 
+
+const Hacker = () => ( <HackerPage /> )
+
+
 const BrewingProcess = () => ( <BrewingProcessPage /> )
 const BrewingProcess1 = () => ( <BrewingProcessPage1 /> )
 const BrewingProcess2 = () => ( <BrewingProcessPage2 /> )
 const BrewingProcess3 = () => ( <BrewingProcessPage3 /> )
 const BrewingProcess4 = () => ( <BrewingProcessPage4 /> )
 const BrewingProcess5 = () => ( <BrewingProcessPage5 /> )
+
 
 const Brew = () => ( <BrewPage /> )
 
@@ -98,6 +107,10 @@ export default class Header extends PureComponent<PropType> {
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/blog" component={Blog} />
+
+                        <Route path="/hackerRank" component={Hacker} />
+
+
                         <Route exact path="/brewingProcess" component={BrewingProcess} />
                         <Route path="/brewingProcess/1-Make-Wort" component={BrewingProcess1} />
                         <Route path="/brewingProcess/2-The-Boil" component={BrewingProcess2} />

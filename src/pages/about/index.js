@@ -54,7 +54,7 @@ export default class Header extends PureComponent<PropType> {
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
                     <Grid item xs={12} style={styles.headerGrid}>
                         <Typography variant="display2" style={styles.mainHeaderText}>
-                            About
+                            Hello
                             </Typography>
                         {/* <Typography variant="headline" style={styles.headerText}>
                         Volzbrew is dedicated to teaching an affordable way to brew at home.
@@ -70,39 +70,26 @@ export default class Header extends PureComponent<PropType> {
                     <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
                         <Grid item xs={12}>
 
-                            <Typography variant="subheading" gutterBottom>
+                            <Typography variant="headline" gutterBottom>
                                 {/* Volzbrew is dedicated to teaching an affordable way to brew at home. */}
-                                The Volz bros have proven:
+                                My name is Max Volz.
                                 <br />
                                 <br />
-                                <em><u>YOU</u> CAN BREW AMAZING BEER!!!</em>
+                                I live in Walnut Creek, California. 
                                 <br />
                                 <br />
-                                Honestly, the beer you brew can rival and surpass just about anything found in stores. We’re just regular guys who make delicious BEER. We want to share our unique experiences and home brewing tips to help YOU create your very own delicious, home brewed BEER!
+                                I like to ride to my bike with my girlfriend Molly, grow vegetables in our garden, and take care of my four noisy chickens.
                                 <br />
                                 <br />
-                                Our first attempts were huge successes thanks to the advice and support from two of our Uncles (30+ years brewing experience) and we haven’t stopped brewing since. 
+                                When I'm not doing those things, which is most of the time, I enjoy creating websites, applications, and graphics on my computer.
                                 <br />
                                 <br />
-                                Our methods are best for anyone interested in brewing beer at home. If you’re looking to get started, or have previous brewing experience, we can guide you to continued success: <b>lots and lots of great home brew!</b>
+                                Thank you for checking out my site, I hope you find something you like.
                                 <br />
                                 <br />
-                                Once we decided we were going to brew we quickly learned that finding good information online is surprisingly very difficult: The information is disorganized and the best tips are often found deeply buried in forums. In many cases advice proved contradictory, which lead to even more questions.
+                                Best,
                                 <br />
-                                <br />
-                                We created this site to provide the most important information, the things we really wanted and needed to know when we were just starting out, organized conveniently in one location.
-                                <br />
-                                <br />
-                                We hope you’ll enjoy this great hobby as much as we do and share our passion.
-                                <br />
-                                <br />
-                                Don't worry, brewing beer is simple and quite forgiving...as long as you are diligent with sanitization! 
-                                <br />
-                                <br />
-                                Cheers!
-                                <br />
-                                <br />
-                                Joe Volz, Kevin Volz, and Max Volz
+                                Max
                             </Typography>
                         </Grid>
                     </Grid>
@@ -111,10 +98,10 @@ export default class Header extends PureComponent<PropType> {
 
                     <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                         <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <Link to="/brewingProcess">
+                            <Link to="/">
 
                                 <Button variant="raised">
-                                    The Brewing Process
+                                    Back
 
                                 </Button>
                             </Link>

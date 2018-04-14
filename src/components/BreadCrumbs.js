@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import theme from '../style/theme';
 
-import List, { ListItem, ListItemText } from 'material-ui/List';
-
-
 export default class BreadCrumbs extends PureComponent<PropType> {
     render() {
         return (

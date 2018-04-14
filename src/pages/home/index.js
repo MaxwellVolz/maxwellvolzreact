@@ -92,7 +92,7 @@ const styles = {
     bikerSVG:{
         position: 'absolute',
         height: '300px',
-        bottom: '226px'
+        top: '362px'
     }
 
 
@@ -168,7 +168,7 @@ export default class Header extends PureComponent<PropType> {
 
 
                     <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign:'center' }}>
-                       Check out some of my recent projects.
+                       Check out some of my recent work.
                     </Typography>
 
                 </div>
@@ -208,16 +208,14 @@ export default class Header extends PureComponent<PropType> {
                                                 Volzbrew.com
                                         </Typography>
                                             <Typography component="p">
-                                            We're just regular guys who make delicious BEER. Our first attempts were huge successes thanks to the tips and support from our Uncles and we want to share what we know.
+                                            Volzbrew is a website I built using <b>ReactJS</b> and <b>MaterialUI</b>. The knowledge of brewing and process is provided by my brothers Kevin and Joe.
                                         </Typography>
                                         </CardContent>
                                         <CardActions>
                                             <Button size="small" color="primary">
-                                                Learn More
+                                                Check it out
                                             </Button>
-                                            <Button size="small" color="primary">
-                                                Share
-                                        </Button>
+                                            
                                         </CardActions>
                                     </Card>
                                 </div>
@@ -263,19 +261,24 @@ export default class Header extends PureComponent<PropType> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
-                                                MaxwellVolz.com
+                                                HackerRank
                                         </Typography>
                                             <Typography component="p">
-                                                As usual I do a breakdown of the technologies used for creating my personal website; <b>ReactJS, Webpack, MaterialUI, AWS, Node, and more!</b>
+                                                Check out some of my solutions to HackerRank algorithms using <b>JavaScript</b>. Plus a tutorial for setting up your own local development server with <b>Node</b> and <b>Gulp</b>!
+                                                {/* As usual I do a breakdown of the technologies used for creating my personal website; <b>ReactJS, Webpack, MaterialUI, AWS, Node, and more!</b> */}
                                             </Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <Button size="small" color="primary">
-                                                Learn More
-                                            </Button>
-                                            <Button size="small" color="primary">
-                                                Git
-                                            </Button>
+                                            <Link to="/hackerRank">
+                                                <Button size="small" color="primary">
+                                                    Learn More
+                                                </Button>
+                                            </Link>
+                                            <Link to="https://github.com/MaxwellVolz/hackerranklocal">
+                                                <Button size="small" color="primary">
+                                                    Git
+                                                </Button>
+                                            </Link>
                                         </CardActions>
                                     </Card>
                                 </div>

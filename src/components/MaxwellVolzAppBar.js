@@ -56,22 +56,27 @@ export default class VolzbrewAppBar extends PureComponent<PropType> {
                             <div>Blog</div>
                         </Button>
                     </Link> */}
+                   
                     <Link to="/resume" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             Resume
                         </Button>
                     </Link>
-                    <Link to="/projects" style={styles.navBarOptions}>
+                    {/* <Link to="/projects" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             Projects
                         </Button>
-                    </Link>
+                    </Link> */}
                     <Link to="/about" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             About
                         </Button>
                     </Link>
-                    
+                    <Link to="/" style={styles.navBarOptions}>
+                        <Button style={styles.buttonText}>
+                            Home
+                        </Button>
+                    </Link>
                     
                    
                 </div>
