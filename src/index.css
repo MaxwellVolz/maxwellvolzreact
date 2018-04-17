@@ -122,3 +122,8 @@ img.bikerSVG {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+#cluster > svg{
+  /* width:100vw; */
+  
+}

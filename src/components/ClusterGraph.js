@@ -21,8 +21,15 @@ export default class BarChart extends Component {
         this.createGalaxy = this.createGalaxy.bind(this);
     }
 
+    resize = () => this.forceUpdate()
+
     componentDidMount() {
         this.createGalaxy();
+        window.addEventListener('resize', this.resize)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resize)
     }
 
     componentDidUpdate() {
@@ -33,7 +40,8 @@ export default class BarChart extends Component {
 
         // Code goes here
 
-        var width = 1200,
+        document.querySelector("#cluster").innerHTML = "";
+        var width = document.querySelector("#cluster").clientWidth,
             height = 800,
             padding = 1.5, // separation between same-color nodes
             clusterPadding = 16, // separation between different-color nodes
@@ -121,8 +129,9 @@ export default class BarChart extends Component {
             .on("tick", tick)
             .start();
 
+
         var svg = d3.select("#cluster").append("svg")
-            .attr("width", width)
+            .attr("width", '100vw')
             .attr("height", height);
 
         // console.log(nodes)

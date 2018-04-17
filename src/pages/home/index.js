@@ -18,9 +18,16 @@ import BarChart from '../../components/BarChart';
 import ForceGalaxy from '../../components/D3ForceGalaxy';
 import ClusterGraph from '../../components/ClusterGraph';
 
+import MyProcessAccordion from '../../components/MyProcessAccordion';
+
+
 // import bikerSVG from '../../imgs/svgs/cruising.svg';
 
 import biker from '../../imgs/svgs/cruising.svg';
+import brewProcessAnim from '../../imgs/svgs/brewProcessAnim.svg';
+import blokDodge from '../../imgs/blokDodge3.png';
+import hackerRank from '../../imgs/hackerRank.png';
+
 
 const styles = {
     headerGrid: {
@@ -81,17 +88,20 @@ const styles = {
     },
     cardImg1: {
         // backgroundImage: `url(${mash})`,
+        backgroundSize: 'contain',
+
         height: 200,
     },
     cardImg2: {
         // backgroundImage: `url(${brewpot})`,
-        height: 200,
+        backgroundSize: 'cover',
+        height: 116,
     },
     cardImg3: {
         // backgroundImage: `url(${brewbros})`,
         height: 200,
     },
-    bikerSVG:{
+    bikerSVG: {
         position: 'absolute',
         height: '300px',
         top: '362px'
@@ -117,17 +127,17 @@ export default class Header extends PureComponent<PropType> {
 
 
                         <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0, paddingTop: 230, }}>
-                            
+
                             <Grid item xs={10} md={8}>
                                 <Link to="/brew">
                                     <Typography variant="display3" component="h2" style={{ color: 'white' }}>
-                                       Experienced web developer.
+                                        Experienced web developer.
                                     </Typography>
-                                    
+
                                 </Link>
                             </Grid>
                             <img src={biker} className="bikerSVG" style={styles.bikerSVG} alt="biker" />
-                            
+
                             {/* <Grid item xs={5} md={4} style={{ color: 'white', textAlign: 'right' }}>
                                 <Typography variant="display2" component="h2" style={{ color: 'white', textDecoration: 'underline', marginBottom: '8px' }}>
                                     New Articles
@@ -143,7 +153,7 @@ export default class Header extends PureComponent<PropType> {
                                     </Typography>
                                 </Link>
                             </Grid> */}
-                            
+
                         </Grid>
                         {/* <Typography variant="display2" style={styles.mainHeaderText}>Volzbrew</Typography> */}
 
@@ -169,8 +179,8 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap">
 
 
-                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign:'center' }}>
-                       Check out some of my recent work
+                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
+                        Check out some of my recent work
                     </Typography>
 
                 </div>
@@ -192,10 +202,10 @@ export default class Header extends PureComponent<PropType> {
                     </div>
                 {/* </div> */}
                 <div className="headerGrid">
-                
-                <div className="contentWrap">
 
-                    <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40, marginBottom: 40 }}>
+                    <div className="contentWrap">
+
+                        <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40, marginBottom: 40 }}>
 
                             <Grid item xs={12} md={4}>
                                 <div>
@@ -203,26 +213,30 @@ export default class Header extends PureComponent<PropType> {
                                         <CardMedia
                                             style={styles.cardImg1}
                                             title="Homebrewing Basics"
-                                            src="placeholderSRC"
+                                            image={brewProcessAnim}
+
+                                        // src=
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
                                                 Volzbrew.com
                                         </Typography>
                                             <Typography component="p">
-                                            Volzbrew is a website I built using <b>ReactJS</b> and <b>MaterialUI</b>. The knowledge of brewing and process is provided by my brothers Kevin and Joe.
+                                                Volzbrew is a work in progress website that showcases the advantages and technique behind brewing in a bag. The knowledge of brewing and process is provided by my brothers Kevin and Joe.
                                         </Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <Button size="small" color="primary">
-                                                Check it out
+                                            <Link to="http://volzbrew.com">
+
+                                                <Button size="small" color="primary">
+                                                    Check it out
                                             </Button>
-                                            
+                                            </Link>
                                         </CardActions>
                                     </Card>
                                 </div>
                             </Grid>
-                        
+
                             <Grid item xs={12} md={4}>
                                 <div>
                                     <Card style={styles.card}>
@@ -230,29 +244,36 @@ export default class Header extends PureComponent<PropType> {
                                             style={styles.cardImg2}
                                             title="Equipment"
                                             src="placeholderSRC"
+                                            image={blokDodge}
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
                                                 Blokdodge
                                         </Typography>
                                             <Typography component="p">
-                                                BLOKDODGE is a fast-paced block simulator based in a fantastic world of geometry. Are you edgy enough? Do you get the point? 
+                                                BLOKDODGE is a fast-paced block simulator based in a fantastic world of geometry. Are you edgy enough? Do you get the point?<br /><br />
+                                                85% Positive Ratings on Steam
                                     </Typography>
                                         </CardContent>
                                         <CardActions>
                                             {/* <Button size="small" color="primary">
                                                 Learn More
                                             </Button> */}
-                                            <Button size="small" color="primary">
-                                                VIEW ON STEAM
-                                            </Button>
+                                            <Link to="http://store.steampowered.com/app/683670/BLOKDODGE/">
+
+
+                                                <Button size="small" color="primary">
+                                                    VIEW ON STEAM
+                                                </Button>
+
+                                            </Link>
                                         </CardActions>
                                     </Card>
                                 </div>
                             </Grid>
-                            
-                        
-                                
+
+
+
                             <Grid item xs={12} md={4}>
                                 <div>
                                     <Card style={styles.card}>
@@ -260,6 +281,7 @@ export default class Header extends PureComponent<PropType> {
                                             style={styles.cardImg3}
                                             title="$$"
                                             src="placeholderSRC"
+                                            image={hackerRank}
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="headline" component="h2">
@@ -288,25 +310,61 @@ export default class Header extends PureComponent<PropType> {
                         </Grid>
 
                     </div>
-                    </div>
-
-                    <div className="contentWrap">
+                </div>
 
 
-                        <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign:'center' }}>
-                            Technologies I use
+                <div className="contentWrap">
+
+
+                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
+                        Technologies I Use
                         </Typography>
-                                    <ClusterGraph />
-                        
-                                    {/* <ForceGalaxy /> */}
-    
-                                    {/* <BarChart data={[5,10,1,3]} size={[500,500]} /> */}
-                        
 
+                    {/* <ForceGalaxy /> */}
+
+                    {/* <BarChart data={[5,10,1,3]} size={[500,500]} /> */}
+                </div>
+
+                <div className="colorWrap">
+                    <ClusterGraph />
+                </div>
+
+                <div className="contentWrap">
+
+
+                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
+                        My Current Process
+                        </Typography>
+
+                </div>
+                <div className="colorWrap">
+                    <div className="contentWrap">
+                        <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40, marginBottom: 40 }}>
+
+                            <Grid item xs={12} md={8}>
+
+                                <MyProcessAccordion />
+
+                            </Grid>
+                        </Grid>
                     </div>
+                </div>
 
-                </MuiThemeProvider>
+                <div className="contentWrap">
 
-                );
-            }
-        }
+
+                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
+                        You came, you saw. Thank you.
+                    </Typography>
+
+                    {/* <ForceGalaxy /> */}
+
+                    {/* <BarChart data={[5,10,1,3]} size={[500,500]} /> */}
+                </div>
+
+
+            </MuiThemeProvider>
+
+        );
+    }
+}

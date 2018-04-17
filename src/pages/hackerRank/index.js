@@ -101,7 +101,7 @@ export default class Header extends PureComponent<PropType> {
 
                         <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                             <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                                <Link to="/brewingProcess">
+                                <Link to="https://github.com/MaxwellVolz/hackerranklocal">
 
                                     <Button variant="raised">
                                         Skip to the Solutions
@@ -345,7 +345,7 @@ export default class Header extends PureComponent<PropType> {
                         
                             Now you can quickly compile code on your local machine and test away!
                         </Typography>
-                        <Link to="/brewingProcess">
+                        <Link to="https://github.com/MaxwellVolz/hackerranklocal">
 
                             <Button variant="raised">
                                 View Solutions
