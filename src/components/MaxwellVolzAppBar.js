@@ -9,6 +9,8 @@ import theme from '../style/theme';
 
 import Typography from 'material-ui/Typography';
 
+import pdf from '../pdfs/MaxVolzResume.pdf';
+
 // import backgroundImage from '../imgs/milledGrains.jpg';
 
 // import logoSVG from '../imgs/logoNoTextW.svg';
@@ -56,12 +58,15 @@ export default class VolzbrewAppBar extends PureComponent<PropType> {
                             <div>Blog</div>
                         </Button>
                     </Link> */}
+                    <a href={pdf} style={{float:'right'}}>
                    
-                    <Link to="/resume" style={styles.navBarOptions}>
+                    {/* <Link to={pdf} style={styles.navBarOptions}> */}
                         <Button style={styles.buttonText}>
                             Resume
                         </Button>
-                    </Link>
+                    {/* </Link> */}
+                    </a>
+                    
                     {/* <Link to="/projects" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             Projects
@@ -72,6 +77,7 @@ export default class VolzbrewAppBar extends PureComponent<PropType> {
                             About
                         </Button>
                     </Link>
+                    
                     <Link to="/" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             Home
