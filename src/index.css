@@ -1,4 +1,4 @@
-body {
+body, #root {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -12,12 +12,15 @@ body {
   overflow-x: hidden;  
 }
 
+#aboutHeader{
+  margin-top: 120px;
+}
 .headerGrid{
 	overflow:hidden;
 	/*background-image: url('/images/bli_grc.jpg');*/
 	background: linear-gradient(270deg, #04518C, #00A1D9, #47D9BF, #F2D03B);
 	/*background: linear-gradient(270deg, #004358, #1f8a70, #bedb39, #ffe11a, #fd7400);*/
-	background-size: 1000% 1000%;
+  background-size: 1000% 1000%;
 	height:680;
 	-webkit-animation: AnimationName 40s ease infinite;
 	animation: AnimationName 40s ease infinite;
@@ -86,17 +89,26 @@ a, a:visited, a:hover, a:active {
 
 
 @media only screen and (max-width: 768px) {
+
+
+  #aboutHeader{
+    margin-top: 20px;
+  }
   img.bikerSVG {
     display: none;
   }
 
+  #root > div > header > div > a:nth-child(1){
+    display:none;
+  }
+
   .contentWrap {
-    /* width: 86vw; */
+    width: 86vw;
     padding:12px 0;
 
   }
   .contentWrap86{
-    width: 96vw;
+    width: 86vw;
     /* margin: 0 auto; */
     padding:12px 0;
   }
@@ -125,12 +137,12 @@ a, a:visited, a:hover, a:active {
 @keyframes bikerAnim
 {
     from {
-        transform:translateX(1500px);
-        /* left: 100%; */
+        /* transform:translateX(1500px); */
+        left: 100%;
     }
     to {
-        transform:translateX(-500px);
-        /* left: -50%; */
+        /* transform:translateX(-500px); */
+        left: -50%;
     }
 }
 

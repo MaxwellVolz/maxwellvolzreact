@@ -10,6 +10,8 @@ import theme from '../../style/theme';
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
+import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
+
 
 
 // import backgroundImage from '../../imgs/milledGrains.jpg';
@@ -22,8 +24,7 @@ const styles = {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         textAlign: 'center',
-        height: '340px',
-        marginTop: '120px'
+        height: '340px'
     },
     mainHeaderText: {
         paddingTop: '140px',
@@ -52,10 +53,12 @@ export default class Header extends PureComponent<PropType> {
         return (
 
             <MuiThemeProvider theme={theme}>
+                <ScrollToTopOnMount/>
+            
 
 
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
-                    <Grid item xs={12} style={styles.headerGrid}>
+                    <Grid item xs={12} style={styles.headerGrid} id="aboutHeader">
                         <img src={profilePic} id="profileIMG" />
                         {/* <Typography variant="display2">
                             Hello
@@ -82,7 +85,7 @@ export default class Header extends PureComponent<PropType> {
                                 I live in Walnut Creek, California. 
                                 <br />
                                 <br />
-                                I like to ride to my bike with my girlfriend Molly, grow vegetables in our garden, and take care of my four noisy chickens.
+                                I enjoy riding my bike with my girlfriend Molly, growing vegetables in our garden, and taking care of my four noisy chickens.
                                 <br />
                                 <br />
                                 When I'm not doing those things, which is most of the time, I enjoy creating websites, applications, and graphics on my computer.

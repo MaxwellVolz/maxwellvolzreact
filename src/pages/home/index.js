@@ -20,6 +20,8 @@ import ClusterGraph from '../../components/ClusterGraph';
 
 import MyProcessAccordion from '../../components/MyProcessAccordion';
 
+import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
+
 
 // import bikerSVG from '../../imgs/svgs/cruising.svg';
 
@@ -34,7 +36,7 @@ const styles = {
         // backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
-        // backgroundSize: 'cover',
+        // marginTop: '120px',
         height: '660px'
     },
     mainHeaderText: {
@@ -118,6 +120,9 @@ export default class Header extends PureComponent<PropType> {
 
             <MuiThemeProvider theme={theme}>
 
+                <ScrollToTopOnMount/>
+            
+
 
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
 
@@ -130,7 +135,7 @@ export default class Header extends PureComponent<PropType> {
 
                             <Grid item xs={10} md={8}>
                                 <Link to="/brew">
-                                    <Typography variant="display3" component="h2" style={{ color: 'white' }}>
+                                    <Typography variant="display2" component="h2" style={{ color: 'white' }}>
                                         Experienced web developer.
                                     </Typography>
 
@@ -182,7 +187,7 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap">
 
 
-                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
+                    <Typography variant="display2" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
                         Check out some of my recent work
                     </Typography>
 
@@ -319,7 +324,7 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap">
 
 
-                    <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
+                    <Typography variant="display2" component="h2" style={{ marginTop: 40, marginBottom: 40, textAlign: 'center' }}>
                         Technologies I Use
                         </Typography>
 

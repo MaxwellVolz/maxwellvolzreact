@@ -59,8 +59,6 @@ export default class BarChart extends Component {
         console.log(width);
 
 
-        
-
         var n = 100, // total number of nodes
             m = 20; // number of distinct clusters
 

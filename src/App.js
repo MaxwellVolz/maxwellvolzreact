@@ -100,12 +100,13 @@ export default class Header extends PureComponent<PropType> {
 
             <Router onUpdate={() => window.scrollTo(0, 0)} >
 
-                <div>
+                <div id="siteWrapper">
                     <MaxwellVolzAppBar />
 
                     <div style={styles.content}>
                         <Route exact path="/" component={Home} />
-                        <Route path="/about" component={About} />
+
+                        <Route exact={true} path="/about" component={About} />
                         <Route path="/blog" component={Blog} />
 
                         <Route path="/hackerRank" component={Hacker} />
