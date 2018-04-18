@@ -136,7 +136,10 @@ export default class Header extends PureComponent<PropType> {
 
                                 </Link>
                             </Grid>
+
+                            <div style={{ overflowX: 'hidden', zIndex: '1000' }}>
                             <img src={biker} className="bikerSVG" style={styles.bikerSVG} alt="biker" />
+                            </div>
 
                             {/* <Grid item xs={5} md={4} style={{ color: 'white', textAlign: 'right' }}>
                                 <Typography variant="display2" component="h2" style={{ color: 'white', textDecoration: 'underline', marginBottom: '8px' }}>

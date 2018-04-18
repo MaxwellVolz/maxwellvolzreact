@@ -41,11 +41,25 @@ export default class BarChart extends Component {
         // Code goes here
 
         document.querySelector("#cluster").innerHTML = "";
+        
         var width = document.querySelector("#cluster").clientWidth,
             height = 800,
             padding = 1.5, // separation between same-color nodes
             clusterPadding = 16, // separation between different-color nodes
             maxRadius = 24;
+
+        console.log(width);
+
+        let sizeMultiplier = 1;
+
+        if(width < 768){
+            sizeMultiplier = 0.6;
+        }
+
+        console.log(width);
+
+
+        
 
         var n = 100, // total number of nodes
             m = 20; // number of distinct clusters
@@ -88,7 +102,7 @@ export default class BarChart extends Component {
         for (var i = 0; i < data.length; i++) {
             var obj = data[i];
             for (var key in obj) {
-                var rating = obj['size'];	// rating
+                var rating = obj['size'] * sizeMultiplier;	// rating
                 var r = rating * 100;		// radius
                 var n = obj['name'];		// name
                 var div = obj['division'];	// division

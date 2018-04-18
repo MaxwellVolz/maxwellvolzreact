@@ -13,6 +13,7 @@ import Typography from 'material-ui/Typography';
 
 
 // import backgroundImage from '../../imgs/milledGrains.jpg';
+import profilePic from '../../imgs/profile.png';
 
 const styles = {
     headerGrid: {
@@ -20,7 +21,9 @@ const styles = {
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '340px'
+        textAlign: 'center',
+        height: '340px',
+        marginTop: '120px'
     },
     mainHeaderText: {
         paddingTop: '140px',
@@ -53,9 +56,10 @@ export default class Header extends PureComponent<PropType> {
 
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
                     <Grid item xs={12} style={styles.headerGrid}>
-                        <Typography variant="display2" style={styles.mainHeaderText}>
+                        <img src={profilePic} id="profileIMG" />
+                        {/* <Typography variant="display2">
                             Hello
-                            </Typography>
+                            </Typography> */}
                         {/* <Typography variant="headline" style={styles.headerText}>
                         Volzbrew is dedicated to teaching an affordable way to brew at home.
                             </Typography> */}
@@ -72,7 +76,7 @@ export default class Header extends PureComponent<PropType> {
 
                             <Typography variant="headline" gutterBottom>
                                 {/* Volzbrew is dedicated to teaching an affordable way to brew at home. */}
-                                My name is Max Volz.
+                                Hello. My name is Max Volz.
                                 <br />
                                 <br />
                                 I live in Walnut Creek, California. 

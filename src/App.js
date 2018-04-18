@@ -109,14 +109,11 @@ export default class Header extends PureComponent<PropType> {
                         <Route path="/blog" component={Blog} />
 
                         <Route path="/hackerRank" component={Hacker} />
+                        
+                        <Route path="/hackerRank" component={Hacker} />
 
 
-                        <Route exact path="/brewingProcess" component={BrewingProcess} />
-                        <Route path="/brewingProcess/1-Make-Wort" component={BrewingProcess1} />
-                        <Route path="/brewingProcess/2-The-Boil" component={BrewingProcess2} />
-                        <Route path="/brewingProcess/3-Cool-Wort" component={BrewingProcess3} />
-                        <Route path="/brewingProcess/4-Fermentation" component={BrewingProcess4} />
-                        <Route path="/brewingProcess/5-Carbonation" component={BrewingProcess5} />
+                        
 
                         <Route path="/brew" component={Brew} />
 

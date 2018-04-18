@@ -7,6 +7,11 @@ body {
   background-color:#eeeeee;
 }
 
+#siteWrapper{
+  width:100%;
+  overflow-x: hidden;  
+}
+
 .headerGrid{
 	overflow:hidden;
 	/*background-image: url('/images/bli_grc.jpg');*/
@@ -16,6 +21,11 @@ body {
 	height:680;
 	-webkit-animation: AnimationName 40s ease infinite;
 	animation: AnimationName 40s ease infinite;
+}
+
+#profileIMG{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @-webkit-keyframes AnimationName {
@@ -76,9 +86,14 @@ a, a:visited, a:hover, a:active {
 
 
 @media only screen and (max-width: 768px) {
+  img.bikerSVG {
+    display: none;
+  }
+
   .contentWrap {
-    width: 86vw;
+    /* width: 86vw; */
     padding:12px 0;
+
   }
   .contentWrap86{
     width: 96vw;
@@ -110,10 +125,12 @@ a, a:visited, a:hover, a:active {
 @keyframes bikerAnim
 {
     from {
-        left: 100%;
+        transform:translateX(1500px);
+        /* left: 100%; */
     }
     to {
-        left: -50%;
+        transform:translateX(-500px);
+        /* left: -50%; */
     }
 }
 
@@ -121,9 +138,10 @@ img.bikerSVG {
   animation: bikerAnim 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  overflow:none
 }
 
-#cluster > svg{
-  /* width:100vw; */
+/* #cluster > svg{
+  width:100vw;
   
-}
+} */
