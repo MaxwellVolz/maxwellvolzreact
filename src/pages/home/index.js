@@ -14,8 +14,9 @@ import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 
-import BarChart from '../../components/BarChart';
-import ForceGalaxy from '../../components/D3ForceGalaxy';
+
+
+import ReactiveSVG from '../../components/ReactiveSVG';
 import ClusterGraph from '../../components/ClusterGraph';
 
 import MyProcessAccordion from '../../components/MyProcessAccordion';
@@ -121,6 +122,7 @@ export default class Header extends PureComponent<PropType> {
             <MuiThemeProvider theme={theme}>
 
                 <ScrollToTopOnMount/>
+                <ReactiveSVG />
             
 
 
@@ -234,12 +236,14 @@ export default class Header extends PureComponent<PropType> {
                                         </Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <Link to="http://volzbrew.com">
+                                            {/* <Link to="http://volzbrew.com"> */}
+                                            {/* <a href="http://volzbrew.com"> */}
 
                                                 <Button size="small" color="primary">
-                                                    Check it out
+                                                    Coming Very Soon!
                                             </Button>
-                                            </Link>
+                                            {/* </a> */}
+                                            {/* </Link> */}
                                         </CardActions>
                                     </Card>
                                 </div>
@@ -267,14 +271,15 @@ export default class Header extends PureComponent<PropType> {
                                             {/* <Button size="small" color="primary">
                                                 Learn More
                                             </Button> */}
-                                            <Link to="http://store.steampowered.com/app/683670/BLOKDODGE/">
+                                            <a href="http://store.steampowered.com/app/683670/BLOKDODGE/">
+
 
 
                                                 <Button size="small" color="primary">
                                                     VIEW ON STEAM
                                                 </Button>
 
-                                            </Link>
+                                            </a>
                                         </CardActions>
                                     </Card>
                                 </div>
@@ -301,16 +306,16 @@ export default class Header extends PureComponent<PropType> {
                                             </Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <Link to="/hackerRank">
+                                            <a href="/hackerRank">
                                                 <Button size="small" color="primary">
                                                     Learn More
                                                 </Button>
-                                            </Link>
-                                            <Link to="https://github.com/MaxwellVolz/hackerranklocal">
+                                            </a>
+                                            <a href="https://github.com/MaxwellVolz/hackerranklocal">
                                                 <Button size="small" color="primary">
                                                     Git
                                                 </Button>
-                                            </Link>
+                                            </a>
                                         </CardActions>
                                     </Card>
                                 </div>

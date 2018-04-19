@@ -90,7 +90,7 @@ export default class Header extends PureComponent<PropType> {
 
                             <Typography variant="headline" gutterBottom>
                                 {/* Volzbrew is dedicated to teaching an affordable way to brew at home. */}
-                                <Link to="https://www.hackerrank.com/dashboard" style={{textDecoration:'underline'}}>HackerRank.com</Link> is a website for testing your ability to solve programming algorithms.
+                                <a href="https://www.hackerrank.com/dashboard" style={{textDecoration:'underline'}}>HackerRank.com</a> is a website for testing your ability to solve programming algorithms.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -101,12 +101,12 @@ export default class Header extends PureComponent<PropType> {
 
                         <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                             <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                                <Link to="https://github.com/MaxwellVolz/hackerranklocal">
+                                <a href="https://github.com/MaxwellVolz/hackerranklocal">
 
                                     <Button variant="raised">
                                         Skip to the Solutions
                                     </Button>
-                                </Link>
+                                </a>
 
                             </Grid>
                         </Grid>
@@ -155,12 +155,12 @@ export default class Header extends PureComponent<PropType> {
                                 Check what you have with <code>node -v</code> and <code>npm -v</code>. You could probably get by with slightly older versions. 
                                 <br/>
                                 <br/>
-                                <Link to="https://nodejs.org/en/">
+                                <a href="https://nodejs.org/en/">
 
                                     <Button variant="raised">
                                         Download Latest
                                     </Button>
-                                </Link>
+                                </a>
 
 
                                 
@@ -177,11 +177,11 @@ export default class Header extends PureComponent<PropType> {
                                 My current favorite IDE. The Debugger and Integrated Shell are great for increasing productivity!
                                 <br/>
                                 <br/>
-                                <Link to="https://code.visualstudio.com/">
+                                <a href="https://code.visualstudio.com/">
                                     <Button variant="raised">
                                         Download
                                     </Button>
-                                </Link>
+                                </a>
 
                             </Typography>
                             </ExpansionPanelDetails>
@@ -195,11 +195,11 @@ export default class Header extends PureComponent<PropType> {
                                 Taskrunner of choice for automating running of code. Simple, lightweight, and fits our needs for this project. Definitely optional.
                                 <br/>
                                 <br/>
-                                <Link to="https://gulpjs.com/">
+                                <a href="https://gulpjs.com/">
                                     <Button variant="raised">
                                         Download
                                     </Button>
-                                </Link>
+                                </a>
 
                             </Typography>
                             </ExpansionPanelDetails>
@@ -231,11 +231,11 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap">
                     <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                         <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <Link to="https://gulpjs.com/">
+                            <a href="https://gulpjs.com/">
                                     <Button variant="raised">
                                         Open First Warmup Test on HackerRank
                                     </Button>
-                            </Link>
+                            </a>
                         </Grid>
                     </Grid>
                 </div>
@@ -345,12 +345,12 @@ export default class Header extends PureComponent<PropType> {
                         
                             Now you can quickly compile code on your local machine and test away!
                         </Typography>
-                        <Link to="https://github.com/MaxwellVolz/hackerranklocal">
+                        <a href="https://github.com/MaxwellVolz/hackerranklocal">
 
                             <Button variant="raised">
                                 View Solutions
                             </Button>
-                        </Link>
+                        </a>
                     
                           
 

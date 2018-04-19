@@ -34,27 +34,27 @@ const styles = {
     headerText: {
         textAlign: 'center',
         color: 'white',
-        maxWidth:'400px',
-        margin:'0 auto'
+        maxWidth: '400px',
+        margin: '0 auto'
     },
     contentWrap: {
         width: '80vw',
         margin: '0 auto',
         maxWidth: '100vw',
         padding: '24',
-       
+
     },
 
 };
 
-  
+
 export default class Header extends PureComponent<PropType> {
     render() {
         return (
 
             <MuiThemeProvider theme={theme}>
-                <ScrollToTopOnMount/>
-            
+                <ScrollToTopOnMount />
+
 
 
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
@@ -82,7 +82,7 @@ export default class Header extends PureComponent<PropType> {
                                 Hello. My name is Max Volz.
                                 <br />
                                 <br />
-                                I live in Walnut Creek, California. 
+                                I live in Walnut Creek, California.
                                 <br />
                                 <br />
                                 I enjoy riding my bike with my girlfriend Molly, growing vegetables in our garden, and taking care of my four noisy chickens.
@@ -105,13 +105,16 @@ export default class Header extends PureComponent<PropType> {
 
                     <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                         <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <Link to="/">
+                            {/* <Link to="/"> */}
+                            
+                            <a href="https://www.linkedin.com/in/maxwellvolz">
 
                                 <Button variant="raised">
-                                    Back
+                                    LinkedIn
 
                                 </Button>
-                            </Link>
+                            </a>
+                            {/* </Link> */}
 
                         </Grid>
                     </Grid>

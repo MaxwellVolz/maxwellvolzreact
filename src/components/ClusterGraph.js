@@ -13,7 +13,7 @@ import testo from '../test/test';
 
 
 
-export default class BarChart extends Component {
+export default class ClusterGraph extends Component {
 
     constructor(props) {
         super(props)
@@ -143,7 +143,7 @@ export default class BarChart extends Component {
 
 
         var svg = d3.select("#cluster").append("svg")
-            .attr("width", '100vw')
+            .attr("width", '100%')
             .attr("height", height);
 
         // console.log(nodes)
