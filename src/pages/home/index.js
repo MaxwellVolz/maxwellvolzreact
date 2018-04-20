@@ -107,7 +107,7 @@ const styles = {
     bikerSVG: {
         position: 'absolute',
         height: '300px',
-        top: '362px'
+        top: '380px'
     }
 
 
