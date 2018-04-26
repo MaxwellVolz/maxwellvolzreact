@@ -2,44 +2,58 @@ body, #root {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  width:100%;
-  overflow-x: hidden;  
-  background-color:#eeeeee;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #eeeeee;
 }
 
-#siteWrapper{
-  width:100%;
-  overflow-x: hidden;  
+#siteWrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-#aboutHeader{
+#aboutHeader {
   margin-top: 120px;
 }
-.headerGrid{
-	overflow:hidden;
-	/*background-image: url('/images/bli_grc.jpg');*/
-	background: linear-gradient(270deg, #04518C, #00A1D9, #47D9BF, #F2D03B);
-	/*background: linear-gradient(270deg, #004358, #1f8a70, #bedb39, #ffe11a, #fd7400);*/
+
+.headerGrid {
+  overflow: hidden;
+  /*background-image: url('/images/bli_grc.jpg');*/
+  background: linear-gradient(270deg, #04518C, #00A1D9, #47D9BF, #F2D03B);
+  /*background: linear-gradient(270deg, #004358, #1f8a70, #bedb39, #ffe11a, #fd7400);*/
   background-size: 1000% 1000%;
-	height:680;
-	-webkit-animation: AnimationName 40s ease infinite;
-	animation: AnimationName 40s ease infinite;
+  height: 680;
+  -webkit-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
 }
 
-#profileIMG{
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#profileIMG {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @-webkit-keyframes AnimationName {
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
-@keyframes AnimationName { 
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 .fade-enter {
@@ -57,8 +71,8 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-.processHover:hover > span{
-  background-color:#3f50b5;
+.processHover:hover>span {
+  background-color: #3f50b5;
 }
 
 .colorWrap {
@@ -68,92 +82,106 @@ a, a:visited, a:hover, a:active {
 .contentWrap {
   width: 66vw;
   margin: 0 auto;
-  max-width:100%; 
+  max-width: 100%;
   padding: 24px;
 }
 
-.contentWrap86{
+.contentWrap86 {
   width: 96vw;
   margin: 0 auto;
   padding: 24px;
 }
 
-.contentWrap100{
+.contentWrap100 {
   width: 100vw;
-  max-width:100%;   
+  max-width: 100%;
 }
 
-.navActive{
-  background-color:palegreen !important;
+.navActive {
+  background-color: palegreen !important;
 }
-
 
 @media only screen and (max-width: 768px) {
-
-
-  #aboutHeader{
+  #aboutHeader {
     margin-top: 20px;
   }
   img.bikerSVG {
     display: none;
   }
-
-  #root > div > header > div > a:nth-child(1){
-    display:none;
+  #root>div>header>div>a:nth-child(1) {
+    display: none;
   }
-
   .contentWrap {
     width: 86vw;
-    padding:12px 0;
-
+    padding: 12px 0;
   }
-  .contentWrap86{
+  .contentWrap86 {
     width: 86vw;
     /* margin: 0 auto; */
-    padding:12px 0;
+    padding: 12px 0;
   }
-  .articleNav{
-    padding-left:8px !important;
-    padding-right:0 !important;
+  .articleNav {
+    padding-left: 8px !important;
+    padding-right: 0 !important;
   }
 }
 
-.contentWrapFullWidth{
-  text-align:center;
-  background-color:white;
+.contentWrapFullWidth {
+  text-align: center;
+  background-color: white;
   margin: 40px 0;
   padding: 60px
 }
 
-.svgIcon{
+.svgIcon {
   max-height: 600px;
 }
 
-.svgIconInline{
+.svgIconInline {
   height: 23px;
   vertical-align: middle;
 }
 
-@keyframes bikerAnim
-{
-    from {
-        /* transform:translateX(1500px); */
-        left: 100%;
-    }
-    to {
-        /* transform:translateX(-500px); */
-        left: -50%;
-    }
+@keyframes bikerAnim {
+  from {
+    /* transform:translateX(1500px); */
+    left: 100%;
+  }
+  to {
+    /* transform:translateX(-500px); */
+    left: -50%;
+  }
 }
 
 img.bikerSVG {
   animation: bikerAnim 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  overflow:none
+  overflow: none
 }
 
 /* #cluster > svg{
   width:100vw;
   
 } */
+
+/* ThreeDeeCarousel */
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel>* {
+  flex: 0 0 auto;
+}
+
+.figure {
+  /* width: $item-width; */
+  transform-style: preserve-3d;
+}
+
+.figure>img {
+  width: 100%;
+}
